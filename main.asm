@@ -51,8 +51,8 @@
 
 duty_cycle          res 1   ; (Desired duty cycle)/10%, e.g. 50% -> 5
 
-temp_internal       res 1   ; Temperature inside highboy (F)
-temp_external       res 1   ; Temperature outside highboy (F)
+temp_internal       res 1   ; Temperature inside cabinet (F)
+temp_external       res 1   ; Temperature outside cabinet (F)
 temp_diff           res 1   ; temp_internal - temp_external (F)
 
 temp_int_tens       res 1   ; |
@@ -88,7 +88,7 @@ bcd_hundreds        res 1   ; |
 bcd_tens            res 1   ; |-- Output from the BIN_TO_BCD routine
 bcd_ones            res 1   ; |
 
-routine_temp        res 1   ; Used by several routines, just be careful
+routine_temp        res 1   ; Used by DISP_W
 
 fan_1_error         res 1   ; If this is set, fan 1 is stuck
 fan_2_error         res 1   ; If this is set, fan 2 is stuck
