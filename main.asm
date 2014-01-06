@@ -816,7 +816,7 @@ DIVIDE_24BY16   ; Divide a 24-bit number by a 16-bit number
                 ; Resulting quotient: dividend_hi:dividend_mid:dividend_lo
 
                 ; (I found this routine online, license unknown, but obviously
-                ;  intended for public use. The author is Nikolai Golovchenko.
+                ;  intended for public use. The author is Nikolai Golovchenko.)
 
     CLRF    remainder_hi, A
     CLRF    remainder_lo, A
